@@ -26,7 +26,7 @@ const toys = [
         cost: .12,
         inStock: true
     }
-]
+];
 
 const slinky = {
     id: 44,
@@ -36,13 +36,16 @@ const slinky = {
     price: 7,
     cost: .04,
     inStock: true
-}
+};
 
-toys.push(slinky)
+toys.push(slinky);
+
+const toyToFind = 2;
 
 for (const toyInfo of toys) {
-    
+    if (toyInfo.id === toyToFind) {
     toyInfo.price = toyInfo.price * 1.05
     
     console.log(`The ${toyInfo.name} is for ${toyInfo.category} only! AND it costs ${toyInfo.price} dollars...`)
 }
+};
